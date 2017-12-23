@@ -1,11 +1,11 @@
-import numpy as np
+#import numpy as np
 import pandas as pd
-import Classifiers
-import Preprocessing
-import AutoEncoders
+#import Classifiers
+#import Preprocessing
+#import AutoEncoders
 import NeuralNetwork
-from sklearn.decomposition import KernelPCA
-from sklearn.decomposition import PCA
+#from sklearn.decomposition import KernelPCA
+#from sklearn.decomposition import PCA
 
 def main():
 
