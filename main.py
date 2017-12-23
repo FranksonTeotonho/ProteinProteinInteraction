@@ -70,7 +70,7 @@ def main():
 
     Accuracy = NeuralNetwork.NeuralNetworkClassifier(X3,Y3)
 
-    print("Accuracy: ", Accuracy)
+    print("\n Accuracy: ", Accuracy)
    # print("===================NMBAC 3===============")
    # print("Accuracy:", metrics3['accuracy'])
    # print("Precision:", metrics3['precision'])
