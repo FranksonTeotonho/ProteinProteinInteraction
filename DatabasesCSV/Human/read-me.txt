@@ -1,0 +1,18 @@
+Linhas:8161
+	Positivas:3899
+	Negativas:4262
+
+BioPython
+Colunas:95
+	Atributos:94
+	Classificação:01
+MMI
+Colunas:239
+	Atributos:238
+	Classificação:01
+
+NMBAC
+Colunas:401
+	Atributos:400
+	Classificação:01
+

@@ -1,0 +1,63 @@
+MMI
+	Random Forest:
+	Accuracy: 0.965936462202
+	Precision: 0.984224731651
+	Recall: 0.944600224112
+	Fmeasure: 0.964802169913
+
+	KNN:
+	Accuracy: 0.83519161767
+	Precision: 0.902716862162
+	Recall: 0.734289763364
+	Fmeasure: 0.809741212112
+
+	Arvore de decisao:
+	Accuracy: 0.936038243657
+	Precision: 0.949181690757
+	Recall: 0.905359567596
+	Fmeasure: 0.928138837526
+
+	Naive Bayers:
+	Accuracy: 0.605925728913
+	Precision: 0.557744050926
+	Recall: 0.847393711687
+	Fmeasure: 0.672657696707
+
+	AdaBoost
+	Accuracy: 0.848793662166
+	Precision: 0.861261745919
+	Recall: 0.81508074616
+	Fmeasure: 0.837317118093
+
+BioPython
+	Random Forest:
+	Accuracy: 0.954540751895
+	Precision: 0.98538483177
+	Recall: 0.919468723222
+	Fmeasure: 0.951426306683
+
+	KNN:
+	Accuracy: 0.60213256662
+	Precision: 0.594092872593
+	Recall: 0.528862962231
+	Fmeasure: 0.559415849656
+
+	Arvore de decisao:
+	Accuracy: 0.933342015227
+	Precision: 0.945572733539
+	Recall: 0.9086988333
+	Fmeasure: 0.927681955
+
+	Naive Bayers:
+	Accuracy: 0.554955827102
+	Precision: 0.650224552507
+	Recall: 0.150294641092
+	Fmeasure: 0.243640531199
+
+	AdaBoost
+	Accuracy: 0.842298413024
+	Precision: 0.85806415384
+	Recall: 0.803031441566
+	Fmeasure: 0.829444831558
+
+NMBAC:

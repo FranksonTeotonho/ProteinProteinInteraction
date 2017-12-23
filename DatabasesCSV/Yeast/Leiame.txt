@@ -1,0 +1,6 @@
+DataBaseBAC
+2 x 200 + coluna que informa se interage
+DataBaseBioPython
+2 x 47
+DataBaseMMI
+2 x 119 + coluna que informa se interage
