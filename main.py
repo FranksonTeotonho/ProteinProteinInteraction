@@ -1,7 +1,7 @@
 #import numpy as np
 import pandas as pd
 #import Classifiers
-#import Preprocessing
+import Preprocessing
 #import AutoEncoders
 import NeuralNetwork
 #from sklearn.decomposition import KernelPCA
@@ -62,11 +62,11 @@ def main():
     #X3 = AutoEncoders.AutoEnconde(X3,400,200)
     #print(X1)
 
-    # NMBAC - Yeast
-    dataset_NMBAC = pd.read_csv('DatabasesCSV/Yeast/DataBaseBAC.csv')
-    X3 = dataset_NMBAC.iloc[:, :-1].values
-    Y3 = dataset_NMBAC.iloc[:, 400].values  # BioPython 94, MMI 238
-
+    # BioPython - Human
+    dataset_BioPython = pd.read_csv('DatabasesCSV/Human/Human_Database_BioPython.csv')
+    X1 = dataset_BioPython.iloc[:, :-1].values
+    Y1 = dataset_BioPython.iloc[:, 94].values  # BioPython 94, MMI 238
+    X1 = Preprocessing.FeatureScaling(X1)
 
     Accuracy = NeuralNetwork.NeuralNetworkClassifier(X3,Y3)
 

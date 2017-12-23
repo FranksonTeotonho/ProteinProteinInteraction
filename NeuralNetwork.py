@@ -6,8 +6,8 @@ from keras.wrappers.scikit_learn import KerasClassifier
 def NeuralNetworkModel():
 
     model = Sequential()
-    model.add(Dense(200, input_dim = 400, activation= 'relu'))
-    model.add(Dense(100, activation= 'relu'))
+    model.add(Dense(50, input_dim = 94, activation= 'relu'))
+    model.add(Dense(25, activation= 'relu'))
     model.add(Dense(1, activation = 'sigmoid'))
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
