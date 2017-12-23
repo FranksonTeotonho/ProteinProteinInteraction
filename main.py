@@ -63,10 +63,10 @@ def main():
     #print(X1)
 
 
-    #NMBAC - Human
-    dataset_NMBAC = pd.read_csv('DatabasesCSV/Human/Human_Database_NMBAC.csv')
+    # NMBAC - Matine
+    dataset_NMBAC = pd.read_csv('DatabasesCSV/Matine/Matine_database_NMBAC.csv')
     X3 = dataset_NMBAC.iloc[:, :-1].values
-    Y3 = dataset_NMBAC.iloc[:, 400].values #BioPython 94, MMI 238
+    Y3 = dataset_NMBAC.iloc[:, 400].values  # BioPython 94, MMI 238
 
     Accuracy = NeuralNetwork.NeuralNetworkClassifier(X3,Y3)
 
