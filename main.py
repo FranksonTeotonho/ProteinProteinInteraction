@@ -62,8 +62,8 @@ def main():
     #X3 = AutoEncoders.AutoEnconde(X3,400,200)
     #print(X1)
 
-    # MMI - Human
-    dataset_MMI = pd.read_csv('DatabasesCSV/Human/Human_Database_MMI.csv')
+    # MMI - Matine
+    dataset_MMI = pd.read_csv('DatabasesCSV/Matine/Matine_DataBase_MMI.csv')
     X2 = dataset_MMI.iloc[:, :-1].values
     Y2 = dataset_MMI.iloc[:, 238].values  # BioPython 94, MMI 238
 
