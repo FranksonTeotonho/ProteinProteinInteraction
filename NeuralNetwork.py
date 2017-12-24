@@ -6,7 +6,7 @@ from keras.wrappers.scikit_learn import KerasClassifier
 def NeuralNetworkModel():
 
     model = Sequential()
-    model.add(Dense(50, input_dim = 94, activation= 'relu'))
+    model.add(Dense(50, input_dim = 96, activation= 'relu'))
     model.add(Dense(25, activation= 'relu'))
     model.add(Dense(1, activation = 'sigmoid'))
 
