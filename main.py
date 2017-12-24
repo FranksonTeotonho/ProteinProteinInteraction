@@ -63,10 +63,10 @@ def main():
     #print(X1)
 
 
-    # BioPython - Matine
-    dataset_BioPython = pd.read_csv('DatabasesCSV/Matine/Matine_Database_BioPython.csv')
+    # BioPython - Yeast
+    dataset_BioPython = pd.read_csv('DatabasesCSV/Yeast/DatabaseBioPython.csv')
     X1 = dataset_BioPython.iloc[:, :-1].values
-    Y1 = dataset_BioPython.iloc[:, 94].values  # BioPython 94, MMI 238
+    Y1 = dataset_BioPython.iloc[:, 96].values  # BioPython 94, MMI 238
     X1 = Preprocessing.FeatureScaling(X1)
 
     Accuracy = NeuralNetwork.NeuralNetworkClassifier(X1,Y1)
