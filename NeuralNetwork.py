@@ -11,7 +11,7 @@ def NeuralNetworkModel():
     model.add(Dropout(0.1))
     model.add(Dense(25, activation= 'relu'))
     model.add(Dropout(0.1))
-    model.add(Dense(1, activation = 'sigmoid'))
+    model.add(Dense(1, activation = 'softmax'))
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
@@ -23,7 +23,7 @@ def NeuralNetworkClassifier(X,Y):
                                  epochs=100,
                                  batch_size=10)
 
-    accuracy = cross_val_score(neural_network, X, Y, cv=5, scoring='accuracy')
+    accuracy = cross_val_score(neural_network, X, Y, cv=10, scoring='accuracy')
     x = accuracy.mean()
 
     return x
