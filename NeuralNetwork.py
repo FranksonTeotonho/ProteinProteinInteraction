@@ -23,7 +23,7 @@ def NeuralNetworkClassifier(X,Y):
                                  epochs=100,
                                  batch_size=10)
 
-    accuracy = cross_val_score(neural_network, X, Y, cv=10, scoring='accuracy')
+    accuracy = cross_val_score(neural_network, X, Y, cv=5, scoring='accuracy')
     x = accuracy.mean()
 
     return x
