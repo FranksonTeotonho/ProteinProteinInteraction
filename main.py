@@ -63,13 +63,12 @@ def main():
     #print(X1)
 
 
-    # BioPython - Yeast
-    dataset_BioPython = pd.read_csv('DatabasesCSV/Yeast/DatabaseBioPython.csv')
-    X1 = dataset_BioPython.iloc[:, :-1].values
-    Y1 = dataset_BioPython.iloc[:, 96].values  # BioPython 94, MMI 238
-    X1 = Preprocessing.FeatureScaling(X1)
+    # NMBAC - Human
+    dataset_NMBAC = pd.read_csv('DatabasesCSV/Human/Human_Database_NMBAC.csv')
+    X3 = dataset_NMBAC.iloc[:, :-1].values
+    Y3 = dataset_NMBAC.iloc[:, 400].values  # BioPython 94, MMI 238
 
-    Accuracy = NeuralNetwork.NeuralNetworkClassifier(X1,Y1)
+    Accuracy = NeuralNetwork.NeuralNetworkClassifier(X3,Y3)
 
     print("\n Accuracy: ", Accuracy)
    # print("===================NMBAC 3===============")
