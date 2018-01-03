@@ -69,7 +69,7 @@ def main():
     Y1 = dataset_BioPython.iloc[:, 94].values  # BioPython 94, MMI 238
     X1 = Preprocessing.FeatureScaling(X1)
 
-    Accuracy = NeuralNetwork.NeuralNetworkClassifier(X3,Y3)
+    Accuracy = NeuralNetwork.NeuralNetworkClassifier(X1,Y1)
 
     print("\n Accuracy: ", Accuracy)
    # print("===================NMBAC 3===============")
