@@ -8,8 +8,9 @@ def NeuralNetworkModel():
 
     model = Sequential()
     model.add(Dense(50, input_dim = 96, activation= 'relu'))
-    model.add(Dropout(0.2))
+    model.add(Dropout(0.1))
     model.add(Dense(25, activation= 'relu'))
+    model.add(Dropout(0.1))
     model.add(Dense(1, activation = 'sigmoid'))
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
@@ -19,7 +20,7 @@ def NeuralNetworkModel():
 def NeuralNetworkClassifier(X,Y):
 
     neural_network = KerasClassifier(build_fn=NeuralNetworkModel,
-                                 epochs=40,
+                                 epochs=100,
                                  batch_size=10)
 
     accuracy = cross_val_score(neural_network, X, Y, cv=10, scoring='accuracy')
