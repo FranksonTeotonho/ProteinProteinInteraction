@@ -7,12 +7,10 @@ from keras.wrappers.scikit_learn import KerasClassifier
 def NeuralNetworkModel():
 
     model = Sequential()
-    model.add(Dense(50, input_dim = 94, activation= 'relu'))
-    model.add(Dropout(0.1))
-    model.add(Dense(50 , activation='relu'))
-    model.add(Dropout(0.1))
-    model.add(Dense(25, activation= 'relu'))
-    model.add(Dropout(0.1))
+    model.add(Dense(80, input_dim = 94, activation= 'relu'))
+    model.add(Dropout(0.3))
+    model.add(Dense(60 , activation='relu'))
+    model.add(Dropout(0.3))
     model.add(Dense(1, activation = 'sigmoid'))
 
     model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
